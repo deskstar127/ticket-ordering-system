@@ -1,0 +1,1015 @@
+
+
+Started GET "/tickets/anz/Y2xpZW50QHRlc3QuY29tLDE0NTgzMjY0MzE=--64e0eec7fa85331a78d58fcd01b8fe4d6b197d5166ec3989f55e1ec9acf045bb" for 127.0.0.1 at 2015-03-19 18:17:18 +0800
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"tickets/anz/Y2xpZW50QHRlc3QuY29tLDE0NTgzMjY0MzE=--64e0eec7fa85331a78d58fcd01b8fe4d6b197d5166ec3989f55e1ec9acf045bb"}
+  Rendered home/index.html.slim (3.8ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v2/tickets/anz/Y2xpZW50QHRlc3QuY29tLDE0NTgzMjY0MzE=--64e0eec7fa85331a78d58fcd01b8fe4d6b197d5166ec3989f55e1ec9acf045bb" for 127.0.0.1 at 2015-03-19 18:17:19 +0800
+Processing by Api::V2::TicketsController#anz_index as JSON
+  Parameters: {"auth_token"=>"Y2xpZW50QHRlc3QuY29tLDE0NTgzMjY0MzE=--64e0eec7fa85331a78d58fcd01b8fe4d6b197d5166ec3989f55e1ec9acf045bb"}
+asdf c3dha2VsaW5nQHBhdWx3YWtlbGluZy5jb20uYXUsMTQ1ODM4MjYzOQ==--a6d142ff02c49a9928c42bccfe0c84430aabb77c02368c6e458f82376c9707e5
+  [1m[36mEmployee Load (4.5ms)[0m  [1mSELECT  "employees".* FROM "employees"  WHERE "employees"."email" = 'client@test.com' LIMIT 1[0m
+  [1m[35mSQL (21.0ms)[0m  SELECT "events"."id" AS t0_r0, "events"."name" AS t0_r1, "events"."description" AS t0_r2, "events"."event_type" AS t0_r3, "events"."category" AS t0_r4, "events"."company_id" AS t0_r5, "events"."status" AS t0_r6, "events"."created_at" AS t0_r7, "events"."updated_at" AS t0_r8, "events"."data" AS t0_r9, "events"."uploads" AS t0_r10, "event_dates"."id" AS t1_r0, "event_dates"."event_id" AS t1_r1, "event_dates"."status" AS t1_r2, "event_dates"."created_at" AS t1_r3, "event_dates"."updated_at" AS t1_r4, "event_dates"."event_period" AS t1_r5, "event_dates"."uploads" AS t1_r6, "event_dates"."data" AS t1_r7, "tickets"."id" AS t2_r0, "tickets"."event_date_id" AS t2_r1, "tickets"."facility_id" AS t2_r2, "tickets"."inventory_id" AS t2_r3, "tickets"."client_id" AS t2_r4, "tickets"."storage" AS t2_r5, "tickets"."row" AS t2_r6, "tickets"."seat" AS t2_r7, "tickets"."ticketek_id" AS t2_r8, "tickets"."created_at" AS t2_r9, "tickets"."updated_at" AS t2_r10, "tickets"."status" AS t2_r11, "tickets"."reference_number" AS t2_r12, "facilities"."id" AS t3_r0, "facilities"."facility_type" AS t3_r1, "facilities"."name" AS t3_r2, "facilities"."company_id" AS t3_r3, "facilities"."capacity" AS t3_r4, "facilities"."created_at" AS t3_r5, "facilities"."updated_at" AS t3_r6 FROM "events" LEFT OUTER JOIN "event_dates" ON "event_dates"."event_id" = "events"."id" LEFT OUTER JOIN "tickets" ON "tickets"."event_date_id" = "event_dates"."id" LEFT OUTER JOIN "facilities" ON "facilities"."id" = "tickets"."facility_id" WHERE "tickets"."status" = 'available' AND (tickets.client_id = 'd027778e-8a0f-42a0-a32c-bbf715ad71b1') AND (upper(event_dates.event_period) > now())
+  Rendered api/v2/tickets/anz_index.json.jbuilder (67.4ms)
+Completed 200 OK in 281ms (Views: 42.2ms | ActiveRecord: 54.1ms)
+
+
+Started GET "/tickets/anz/c3dha2VsaW5nQHBhdWx3YWtlbGluZy5jb20uYXUsMTQ1ODM4MjYzOQ==--a6d142ff02c49a9928c42bccfe0c84430aabb77c02368c6e458f82376c9707e5" for 127.0.0.1 at 2015-03-19 18:17:33 +0800
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"tickets/anz/c3dha2VsaW5nQHBhdWx3YWtlbGluZy5jb20uYXUsMTQ1ODM4MjYzOQ==--a6d142ff02c49a9928c42bccfe0c84430aabb77c02368c6e458f82376c9707e5"}
+  Rendered home/index.html.slim (3.8ms)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-03-19 18:17:33 +0800
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-03-19 18:17:33 +0800
+
+
+Started GET "/api/v2/tickets/anz/c3dha2VsaW5nQHBhdWx3YWtlbGluZy5jb20uYXUsMTQ1ODM4MjYzOQ==--a6d142ff02c49a9928c42bccfe0c84430aabb77c02368c6e458f82376c9707e5" for 127.0.0.1 at 2015-03-19 18:17:34 +0800
+Processing by Api::V2::TicketsController#anz_index as JSON
+  Parameters: {"auth_token"=>"c3dha2VsaW5nQHBhdWx3YWtlbGluZy5jb20uYXUsMTQ1ODM4MjYzOQ==--a6d142ff02c49a9928c42bccfe0c84430aabb77c02368c6e458f82376c9707e5"}
+asdf c3dha2VsaW5nQHBhdWx3YWtlbGluZy5jb20uYXUsMTQ1ODM4MjY1NA==--b9192a0b99d67270d0a85a65f727306d2b06cee4bd08945ff44cce37f1298b1e
+  [1m[36mEmployee Load (0.3ms)[0m  [1mSELECT  "employees".* FROM "employees"  WHERE "employees"."email" = 'swakeling@paulwakeling.com.au' LIMIT 1[0m
+  [1m[35mSQL (1.1ms)[0m  SELECT "events"."id" AS t0_r0, "events"."name" AS t0_r1, "events"."description" AS t0_r2, "events"."event_type" AS t0_r3, "events"."category" AS t0_r4, "events"."company_id" AS t0_r5, "events"."status" AS t0_r6, "events"."created_at" AS t0_r7, "events"."updated_at" AS t0_r8, "events"."data" AS t0_r9, "events"."uploads" AS t0_r10, "event_dates"."id" AS t1_r0, "event_dates"."event_id" AS t1_r1, "event_dates"."status" AS t1_r2, "event_dates"."created_at" AS t1_r3, "event_dates"."updated_at" AS t1_r4, "event_dates"."event_period" AS t1_r5, "event_dates"."uploads" AS t1_r6, "event_dates"."data" AS t1_r7, "tickets"."id" AS t2_r0, "tickets"."event_date_id" AS t2_r1, "tickets"."facility_id" AS t2_r2, "tickets"."inventory_id" AS t2_r3, "tickets"."client_id" AS t2_r4, "tickets"."storage" AS t2_r5, "tickets"."row" AS t2_r6, "tickets"."seat" AS t2_r7, "tickets"."ticketek_id" AS t2_r8, "tickets"."created_at" AS t2_r9, "tickets"."updated_at" AS t2_r10, "tickets"."status" AS t2_r11, "tickets"."reference_number" AS t2_r12, "facilities"."id" AS t3_r0, "facilities"."facility_type" AS t3_r1, "facilities"."name" AS t3_r2, "facilities"."company_id" AS t3_r3, "facilities"."capacity" AS t3_r4, "facilities"."created_at" AS t3_r5, "facilities"."updated_at" AS t3_r6 FROM "events" LEFT OUTER JOIN "event_dates" ON "event_dates"."event_id" = "events"."id" LEFT OUTER JOIN "tickets" ON "tickets"."event_date_id" = "event_dates"."id" LEFT OUTER JOIN "facilities" ON "facilities"."id" = "tickets"."facility_id" WHERE "tickets"."status" = 'available' AND (tickets.client_id = 'db42cf95-cecc-4519-b17a-2138f9e9d4f9') AND (upper(event_dates.event_period) > now())
+  Rendered api/v2/tickets/anz_index.json.jbuilder (5.7ms)
+Completed 200 OK in 144ms (Views: 9.3ms | ActiveRecord: 1.4ms)
+  [1m[36m (25.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (39.9ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to InitialDbSetup (20140803132003)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35mSQL (68.2ms)[0m  CREATE EXTENSION IF NOT EXISTS "hstore"
+  [1m[36mSQL (26.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "uuid-ossp"[0m
+  [1m[35m (0.4ms)[0m  DROP TYPE IF EXISTS inventorystatus
+  [1m[36m (12.8ms)[0m  [1mCREATE TYPE inventorystatus AS ENUM ('created', 'client_released', 'employee_released', 'inventoryArchived', 'inventoryCreated')[0m
+  [1m[35m (0.2ms)[0m  DROP TYPE IF EXISTS ehticketstatus
+  [1m[36m (0.4ms)[0m  [1mCREATE TYPE ehticketstatus AS ENUM ('unavailable', 'transiting', 'available', 'released', 'cancelled')[0m
+  [1m[35m (0.2ms)[0m  DROP TYPE IF EXISTS eventstatus
+  [1m[36m (0.3ms)[0m  [1mCREATE TYPE eventstatus AS ENUM ('Coming Soon', 'Open', 'Closing Soon', 'Closed')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140803132003"]]
+  [1m[36m (18.1ms)[0m  [1mCOMMIT[0m
+Migrating to CreateClientCompanies (20140803132004)
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36m (36.5ms)[0m  [1mCREATE TABLE "clients_companies" ("id" uuid PRIMARY KEY  DEFAULT uuid_generate_v4(), "company_id" uuid NOT NULL, "client_id" uuid NOT NULL, "created_at" timestamp DEFAULT 'now()' NOT NULL) [0m
+  [1m[35m (31.3ms)[0m  CREATE  INDEX  "index_clients_companies_on_client_id" ON "clients_companies" USING btree ("client_id")
+  [1m[36m (31.7ms)[0m  [1mCREATE  INDEX  "index_clients_companies_on_company_id" ON "clients_companies" USING btree ("company_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140803132004"]]
+  [1m[36m (12.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateCompanies (20140803132005)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (58.3ms)[0m  [1mCREATE TABLE "companies" ("id" uuid PRIMARY KEY  DEFAULT uuid_generate_v4(), "manager_id" uuid, "name" character varying(150) NOT NULL, "friendly_name" character varying(150) NOT NULL, "company_type" character varying(255) DEFAULT 'company', "address" json DEFAULT '{}', "contact" json DEFAULT '{}', "modules" json DEFAULT '{}', "notifications" json DEFAULT '{}', "created_at" timestamp DEFAULT 'now()' NOT NULL, "updated_at" timestamp DEFAULT 'now()' NOT NULL, "config" json DEFAULT '{}') [0m
+  [1m[35m (31.5ms)[0m  CREATE  INDEX  "index_companies_on_manager_id" ON "companies" USING btree ("manager_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140803132005"]]
+  [1m[35m (13.3ms)[0m  COMMIT
+Migrating to CreateCompaniesFacilities (20140803132006)
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35m (71.7ms)[0m  CREATE TABLE "companies_facilities" ("id" uuid PRIMARY KEY  DEFAULT uuid_generate_v4(), "company_id" uuid NOT NULL, "facility_id" uuid NOT NULL, "lease_period" tstzrange NOT NULL, "is_enabled" boolean DEFAULT 't' NOT NULL) 
+  [1m[36m (23.2ms)[0m  [1mCREATE  INDEX  "index_companies_facilities_on_company_id" ON "companies_facilities" USING btree ("company_id")[0m
+  [1m[35m (23.2ms)[0m  CREATE  INDEX  "index_companies_facilities_on_facility_id" ON "companies_facilities" USING btree ("facility_id")
+  [1m[36m (23.2ms)[0m  [1mCREATE  INDEX  "index_companies_facilities_on_lease_period" ON "companies_facilities" USING btree ("lease_period")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140803132006"]]
+  [1m[36m (12.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateConfirmedOptions (20140803132007)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (58.0ms)[0m  [1mCREATE TABLE "confirmed_options" ("id" uuid PRIMARY KEY  DEFAULT uuid_generate_v4(), "client_id" uuid NOT NULL, "notes" text, "selection" json, "created_at" timestamp DEFAULT 'now()' NOT NULL, "inventory_id" uuid NOT NULL, "host_details" text, "guests" json DEFAULT '[]' NOT NULL, "is_attending" boolean DEFAULT 'f' NOT NULL, "data" json DEFAULT '{}' NOT NULL, "deleted_at" timestamp) [0m
+  [1m[35m (23.2ms)[0m  CREATE  INDEX  "index_confirmed_options_on_client_id" ON "confirmed_options" USING btree ("client_id")
+  [1m[36m (31.7ms)[0m  [1mCREATE  INDEX  "index_confirmed_options_on_deleted_at" ON "confirmed_options" USING btree ("deleted_at")[0m
+  [1m[35m (23.2ms)[0m  CREATE  INDEX  "index_confirmed_options_on_inventory_id" ON "confirmed_options" USING btree ("inventory_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140803132007"]]
+  [1m[35m (11.4ms)[0m  COMMIT
+Migrating to CreateDepartments (20140803132008)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (34.2ms)[0m  CREATE TABLE "departments" ("id" uuid PRIMARY KEY  DEFAULT uuid_generate_v4(), "manager_id" uuid NOT NULL, "company_id" uuid NOT NULL, "name" character varying(150) NOT NULL, "created_at" timestamp DEFAULT 'now()' NOT NULL, "updated_at" timestamp DEFAULT 'now()' NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140803132008"]]
+  [1m[35m (11.2ms)[0m  COMMIT
+Migrating to CreateEmployees (20140803132009)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (58.9ms)[0m  CREATE TABLE "employees" ("id" uuid PRIMARY KEY  DEFAULT uuid_generate_v4(), "company_id" uuid, "department_id" uuid, "approval_path_id" uuid, "email" character varying(175) NOT NULL, "permissions" json DEFAULT '{}' NOT NULL, "password_digest" character varying(60), "created_at" timestamp DEFAULT 'now()' NOT NULL, "updated_at" timestamp DEFAULT 'now()' NOT NULL) 
+  [1m[36m (22.9ms)[0m  [1mCREATE  INDEX  "index_employees_on_company_id" ON "employees" USING btree ("company_id")[0m
+  [1m[35m (23.1ms)[0m  CREATE UNIQUE INDEX  "index_employees_on_email" ON "employees" USING btree ("email")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140803132009"]]
+  [1m[35m (10.5ms)[0m  COMMIT
+Migrating to CreateEventDates (20140803132010)
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (68.5ms)[0m  CREATE TABLE "event_dates" ("id" uuid PRIMARY KEY  DEFAULT uuid_generate_v4(), "event_id" uuid NOT NULL, "status" character varying(255), "created_at" timestamp DEFAULT 'now()' NOT NULL, "updated_at" timestamp DEFAULT 'now()' NOT NULL, "event_period" tstzrange NOT NULL) 
+  [1m[36m (31.5ms)[0m  [1mCREATE  INDEX  "index_event_dates_on_event_id" ON "event_dates" USING btree ("event_id")[0m
+  [1m[35m (31.6ms)[0m  CREATE  INDEX  "index_event_dates_on_event_period" ON "event_dates" USING btree ("event_period")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140803132010"]]
+  [1m[35m (9.8ms)[0m  COMMIT
+Migrating to CreateEvents (20140803132011)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (69.2ms)[0m  CREATE TABLE "events" ("id" uuid PRIMARY KEY  DEFAULT uuid_generate_v4(), "name" character varying(255) NOT NULL, "description" text, "event_type" character varying(255), "category" character varying(255), "company_id" uuid, "status" eventstatus NOT NULL, "created_at" timestamp DEFAULT 'now()' NOT NULL, "updated_at" timestamp DEFAULT 'now()' NOT NULL, "data" json DEFAULT '{}' NOT NULL) 
+  [1m[36m (31.2ms)[0m  [1mCREATE  INDEX  "index_events_on_company_id" ON "events" USING btree ("company_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140803132011"]]
+  [1m[36m (9.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateFacilities (20140803132012)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (36.3ms)[0m  [1mCREATE TABLE "facilities" ("id" uuid PRIMARY KEY  DEFAULT uuid_generate_v4(), "facility_type" character varying(150) NOT NULL, "name" character varying(150) NOT NULL, "company_id" uuid NOT NULL, "capacity" integer DEFAULT 0 NOT NULL, "created_at" timestamp DEFAULT 'now()' NOT NULL, "updated_at" timestamp DEFAULT 'now()' NOT NULL) [0m
+  [1m[35m (39.9ms)[0m  CREATE  INDEX  "index_facilities_on_company_id" ON "facilities" USING btree ("company_id")
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140803132012"]]
+  [1m[35m (7.7ms)[0m  COMMIT
+Migrating to CreateInventory (20140803132013)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (80.5ms)[0m  CREATE TABLE "inventory" ("id" uuid PRIMARY KEY  DEFAULT uuid_generate_v4(), "event_date_id" uuid NOT NULL, "facility_id" uuid NOT NULL, "company_id" uuid NOT NULL, "client_id" uuid NOT NULL, "status" inventorystatus, "total" integer DEFAULT 0 NOT NULL, "remaining" integer DEFAULT 0 NOT NULL, "taken" integer DEFAULT 0 NOT NULL, "reserved" integer DEFAULT 0 NOT NULL, "created_at" timestamp DEFAULT 'now()' NOT NULL, "updated_at" timestamp DEFAULT 'now()' NOT NULL, "options" json DEFAULT '{}' NOT NULL) 
+  [1m[36m (45.4ms)[0m  [1mCREATE  INDEX  "index_inventory_on_client_id" ON "inventory" USING btree ("client_id")[0m
+  [1m[35m (48.2ms)[0m  CREATE  INDEX  "index_inventory_on_company_id" ON "inventory" USING btree ("company_id")
+  [1m[36m (40.6ms)[0m  [1mCREATE  INDEX  "index_inventory_on_event_date_id" ON "inventory" USING btree ("event_date_id")[0m
+  [1m[35m (47.6ms)[0m  CREATE  INDEX  "index_inventory_on_facility_id" ON "inventory" USING btree ("facility_id")
+  [1m[36m (39.2ms)[0m  [1mCREATE  INDEX  "index_inventory_on_status" ON "inventory" USING btree ("status")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140803132013"]]
+  [1m[36m (7.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateProfiles (20140803132015)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (29.3ms)[0m  [1mCREATE TABLE "profiles" ("id" uuid PRIMARY KEY  DEFAULT uuid_generate_v4(), "first_name" character varying(50) NOT NULL, "last_name" character varying(50) NOT NULL, "sex" character varying(255) NOT NULL, "dob" date, "created_at" timestamp DEFAULT 'now()' NOT NULL, "updated_at" timestamp DEFAULT 'now()' NOT NULL, "employee_id" uuid) [0m
+  [1m[35m (23.6ms)[0m  CREATE  INDEX  "index_profiles_on_employee_id" ON "profiles" USING btree ("employee_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140803132015"]]
+  [1m[35m (13.5ms)[0m  COMMIT
+Migrating to CreateTickets (20140803132016)
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (58.1ms)[0m  CREATE TABLE "tickets" ("id" uuid PRIMARY KEY  DEFAULT uuid_generate_v4(), "event_date_id" uuid, "facility_id" uuid, "inventory_id" uuid, "client_id" uuid, "storage" json DEFAULT '{}' NOT NULL, "row" integer, "seat" integer, "ticketek_id" character varying(255), "created_at" timestamp, "updated_at" timestamp, "status" ehticketstatus NOT NULL, "reference_number" serial NOT NULL) 
+  [1m[36m (30.6ms)[0m  [1mCREATE  INDEX  "index_tickets_on_client_id" ON "tickets" USING btree ("client_id")[0m
+  [1m[35m (22.8ms)[0m  CREATE  INDEX  "index_tickets_on_event_date_id" ON "tickets" USING btree ("event_date_id")
+  [1m[36m (23.4ms)[0m  [1mCREATE  INDEX  "index_tickets_on_facility_id" ON "tickets" USING btree ("facility_id")[0m
+  [1m[35m (23.3ms)[0m  CREATE  INDEX  "index_tickets_on_inventory_id" ON "tickets" USING btree ("inventory_id")
+  [1m[36m (31.6ms)[0m  [1mCREATE UNIQUE INDEX  "index_tickets_on_reference_number" ON "tickets" USING btree ("reference_number")[0m
+  [1m[35m (73.3ms)[0m  CREATE  INDEX  "index_tickets_on_status" ON "tickets" USING btree ("status")
+  [1m[36m (40.0ms)[0m  [1mCREATE UNIQUE INDEX  "index_tickets_on_ticketek_id" ON "tickets" USING btree ("ticketek_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140803132016"]]
+  [1m[36m (12.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateApprovalPaths (20140803132017)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (58.5ms)[0m  [1mCREATE TABLE "approval_paths" ("id" uuid PRIMARY KEY  DEFAULT uuid_generate_v4(), "path" integer[] NOT NULL, "created_at" timestamp DEFAULT 'now()' NOT NULL, "updated_at" timestamp DEFAULT 'now()' NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140803132017"]]
+  [1m[36m (11.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateInventoryReleaseRequests (20140804022751)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (56.1ms)[0m  [1mCREATE TABLE "released_inventory_requests" ("id" uuid PRIMARY KEY  DEFAULT uuid_generate_v4(), "inventory_release_id" uuid NOT NULL, "requester_id" uuid NOT NULL, "approval_path_id" uuid NOT NULL, "last_approver_id" uuid, "next_approver_id" uuid, "strategic_reason_id" uuid NOT NULL, "total_attendee_count" integer NOT NULL, "approved_attendee_count" integer DEFAULT 0 NOT NULL, "rejected_attendee_count" integer DEFAULT 0 NOT NULL, "data" json DEFAULT '{}' NOT NULL, "next_reminder_date" date, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (22.8ms)[0m  CREATE  INDEX  "index_released_inventory_requests_on_inventory_release_id" ON "released_inventory_requests" USING btree ("inventory_release_id")
+  [1m[36m (31.6ms)[0m  [1mCREATE  INDEX  "index_released_inventory_requests_on_strategic_reason_id" ON "released_inventory_requests" USING btree ("strategic_reason_id")[0m
+  [1m[35m (46.4ms)[0m  CREATE  INDEX  "index_released_inventory_requests_on_approval_path_id" ON "released_inventory_requests" USING btree ("approval_path_id")
+  [1m[36m (31.5ms)[0m  [1mCREATE  INDEX  "index_released_inventory_requests_on_last_approver_id" ON "released_inventory_requests" USING btree ("last_approver_id")[0m
+  [1m[35m (31.7ms)[0m  CREATE  INDEX  "index_released_inventory_requests_on_next_approver_id" ON "released_inventory_requests" USING btree ("next_approver_id")
+  [1m[36m (31.6ms)[0m  [1mCREATE  INDEX  "index_released_inventory_requests_on_requester_id" ON "released_inventory_requests" USING btree ("requester_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140804022751"]]
+  [1m[36m (10.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateRequestAttendance (20140804024656)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mDROP TYPE IF EXISTS eh_request_status[0m
+  [1m[35m (1.0ms)[0m  CREATE TYPE eh_request_status AS ENUM ('pending', 'approved', 'rejected')
+  [1m[36m (34.8ms)[0m  [1mCREATE TABLE "request_attendances" ("id" uuid PRIMARY KEY  DEFAULT uuid_generate_v4(), "released_inventory_request_id" uuid NOT NULL, "partner_with" uuid, "attendee_id" uuid NOT NULL, "attendee_type" character varying(255) NOT NULL, "status" eh_request_status DEFAULT 'pending' NOT NULL, "is_host" boolean DEFAULT 'f' NOT NULL, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (36.5ms)[0m  CREATE  INDEX  "index_request_attendances_on_released_inventory_request_id" ON "request_attendances" USING btree ("released_inventory_request_id")
+  [1m[36m (26.6ms)[0m  [1mCREATE  INDEX  "index_request_attendances_on_partner_with" ON "request_attendances" USING btree ("partner_with")[0m
+  [1m[35m (23.3ms)[0m  CREATE  INDEX  "index_request_attendances_on_attendee_id" ON "request_attendances" USING btree ("attendee_id")
+  [1m[36m (23.3ms)[0m  [1mCREATE  INDEX  "index_request_attendances_on_attendee_type" ON "request_attendances" USING btree ("attendee_type")[0m
+  [1m[35m (31.7ms)[0m  CREATE  INDEX  "index_request_attendances_on_status" ON "request_attendances" USING btree ("status")
+  [1m[36m (31.6ms)[0m  [1mCREATE  INDEX  "index_request_attendances_on_is_host" ON "request_attendances"  ("is_host")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140804024656"]]
+  [1m[36m (9.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateInventoryReleases (20140804040620)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (64.9ms)[0m  [1mCREATE TABLE "inventory_releases" ("id" uuid PRIMARY KEY  DEFAULT uuid_generate_v4(), "inventory_id" uuid NOT NULL, "client_id" uuid NOT NULL, "company_id" uuid NOT NULL, "department_id" uuid, "total_released_count" integer NOT NULL, "total_open_count" integer NOT NULL, "total_approved_count" integer DEFAULT 0 NOT NULL, "total_requested_count" integer DEFAULT 0 NOT NULL, "event_class" character varying(255), "catering_included" boolean DEFAULT 'f' NOT NULL, "catering_value_cents" integer DEFAULT 0 NOT NULL, "catering_value_currency" character varying(255) DEFAULT 'AUD' NOT NULL, "data" json DEFAULT '{}' NOT NULL, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (27.7ms)[0m  CREATE  INDEX  "index_inventory_releases_on_inventory_id" ON "inventory_releases" USING btree ("inventory_id")
+  [1m[36m (23.1ms)[0m  [1mCREATE  INDEX  "index_inventory_releases_on_client_id" ON "inventory_releases" USING btree ("client_id")[0m
+  [1m[35m (23.4ms)[0m  CREATE  INDEX  "index_inventory_releases_on_company_id" ON "inventory_releases" USING btree ("company_id")
+  [1m[36m (23.3ms)[0m  [1mCREATE  INDEX  "index_inventory_releases_on_department_id" ON "inventory_releases" USING btree ("department_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140804040620"]]
+  [1m[36m (8.5ms)[0m  [1mCOMMIT[0m
+Migrating to AddUploadsToEvent (20140902094307)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (111.4ms)[0m  [1mALTER TABLE "events" ADD COLUMN "uploads" json DEFAULT '{}' NOT NULL[0m
+  [1m[35m (132.9ms)[0m  ALTER TABLE "event_dates" ADD COLUMN "uploads" json DEFAULT '{}' NOT NULL
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140902094307"]]
+  [1m[35m (7.6ms)[0m  COMMIT
+Migrating to AddDataToEventDate (20140902112348)
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (137.8ms)[0m  ALTER TABLE "event_dates" ADD COLUMN "data" json DEFAULT '{}' NOT NULL
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140902112348"]]
+  [1m[35m (14.0ms)[0m  COMMIT
+Migrating to AddOtpKeyToEmployees (20140905020457)
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.7ms)[0m  ALTER TABLE "employees" ADD COLUMN "otp_secret" character varying(16)
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140905020457"]]
+  [1m[35m (9.3ms)[0m  COMMIT
+Migrating to AddConfigColumnToEmployees (20140905102742)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (115.2ms)[0m  ALTER TABLE "employees" ADD COLUMN "config" json DEFAULT '{}' NOT NULL
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140905102742"]]
+  [1m[35m (5.0ms)[0m  COMMIT
+Migrating to CreateMailTemplates (20140930112649)
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (55.5ms)[0m  CREATE TABLE "mail_templates" ("id" uuid PRIMARY KEY  DEFAULT uuid_generate_v1(), "company_id" uuid NOT NULL, "partial" boolean DEFAULT 'f', "editable" boolean DEFAULT 't', "created_at" timestamp, "updated_at" timestamp, "name" character varying(255) NOT NULL, "handler" character varying(255), "path" character varying(255), "format" character varying(255), "locale" character varying(255), "body" text, "data" json) 
+  [1m[36m (23.2ms)[0m  [1mCREATE  INDEX  "index_mail_templates_on_company_id" ON "mail_templates"  ("company_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140930112649"]]
+  [1m[36m (12.6ms)[0m  [1mCOMMIT[0m
+Migrating to AddStateToEmployees (20141008143836)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "employees" ADD COLUMN "state" character varying(255)[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141008143836"]]
+  [1m[36m (5.6ms)[0m  [1mCOMMIT[0m
+Migrating to AddClassToProfiles (20141009094029)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "profiles" ADD COLUMN "klass" character varying(4)[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141009094029"]]
+  [1m[36m (2.5ms)[0m  [1mCOMMIT[0m
+Migrating to ChangePathTypeOnApprovalPath (20141010120038)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "approval_paths" DROP "path"[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "approval_paths" ADD COLUMN "path" character varying(255)[]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20141010120038"]]
+  [1m[35m (7.1ms)[0m  COMMIT
+Migrating to AddOwnerIdToCompaniesFacilities (20141013153758)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "companies_facilities" ADD COLUMN "owner_id" uuid
+  [1m[36mFacilityLease Load (0.8ms)[0m  [1mSELECT "companies_facilities".* FROM "companies_facilities"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141013153758"]]
+  [1m[36m (7.6ms)[0m  [1mCOMMIT[0m
+Migrating to RemoveStateFromEmployees (20141015023804)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "employees" DROP "state"[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141015023804"]]
+  [1m[36m (3.9ms)[0m  [1mCOMMIT[0m
+Migrating to AddDataToRequestAttendances (20141020063627)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (41.9ms)[0m  [1mALTER TABLE "request_attendances" ADD COLUMN "data" json[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141020063627"]]
+  [1m[36m (12.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateGuests (20141020064130)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (58.6ms)[0m  [1mCREATE TABLE "guests" ("id" uuid PRIMARY KEY  DEFAULT uuid_generate_v1(), "company_id" uuid, "encrypted_email" character varying(255), "encrypted_first_name" character varying(255), "encrypted_last_name" character varying(255), "data" json, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (23.2ms)[0m  CREATE  INDEX  "index_guests_on_company_id" ON "guests"  ("company_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20141020064130"]]
+  [1m[35m (11.5ms)[0m  COMMIT
+Migrating to RenameColumnInReleasedInventory (20141021034937)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.8ms)[0m  DROP INDEX "index_inventory_releases_on_company_id"
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "inventory_releases" RENAME COLUMN "company_id" TO "venue_id"[0m
+  [1m[35m (26.1ms)[0m  CREATE  INDEX  "index_inventory_releases_on_venue_id" ON "inventory_releases"  ("venue_id")
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20141021034937"]]
+  [1m[35m (11.9ms)[0m  COMMIT
+Migrating to CreateDownloadTicketsStatus (20150316173624)
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (47.0ms)[0m  CREATE TABLE "download_tickets_statuses" ("id" serial primary key, "inventory_id" uuid, "client_id" uuid, "status" character varying(255)) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150316173624"]]
+  [1m[35m (19.6ms)[0m  COMMIT
+Migrating to AddTicketsZipDownloadedToInventory (20150317102031)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (235.7ms)[0m  ALTER TABLE "inventory" ADD COLUMN "tickets_zip_downloaded" json DEFAULT '{}' NOT NULL
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150317102031"]]
+  [1m[35m (9.5ms)[0m  COMMIT
+Migrating to RemoveTicketsZipDownloadedFromInventory (20150318004252)
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "inventory" DROP "tickets_zip_downloaded"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150318004252"]]
+  [1m[35m (2.0ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  SELECT typname FROM pg_type WHERE typtype = 'e'
+  [1m[36m (0.5ms)[0m  [1mSELECT e.enumlabel FROM pg_enum e JOIN pg_type t ON e.enumtypid = t.oid WHERE t.typname = 'inventorystatus'[0m
+  [1m[35m (0.4ms)[0m  SELECT e.enumlabel FROM pg_enum e JOIN pg_type t ON e.enumtypid = t.oid WHERE t.typname = 'ehticketstatus'
+  [1m[36m (0.4ms)[0m  [1mSELECT e.enumlabel FROM pg_enum e JOIN pg_type t ON e.enumtypid = t.oid WHERE t.typname = 'eventstatus'[0m
+  [1m[35m (0.4ms)[0m  SELECT e.enumlabel FROM pg_enum e JOIN pg_type t ON e.enumtypid = t.oid WHERE t.typname = 'eh_request_status'
+
+
+Started GET "/login" for 127.0.0.1 at 2015-03-20 18:44:17 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"login"}
+  Rendered home/index.html.slim (786.7ms)
+Completed 200 OK in 807ms (Views: 806.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/lineto-akkurat-regular.woff" for 127.0.0.1 at 2015-03-20 18:44:18 +0800
+Processing by HomeController#index as 
+  Parameters: {"path"=>"assets/lineto-akkurat-regular"}
+  Rendered home/index.html.slim (7.6ms)
+Completed 200 OK in 10ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/js/browser-detect.js?_=1426848258748" for 127.0.0.1 at 2015-03-20 18:44:19 +0800
+Processing by HomeController#index as JS
+  Parameters: {"_"=>"1426848258748", "path"=>"js/browser-detect"}
+  Rendered home/index.html.slim (8.8ms)
+Completed 200 OK in 10ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v2/sessions" for 127.0.0.1 at 2015-03-20 18:44:19 +0800
+Processing by Api::V2::SessionsController#index as JSON
+  [1m[35mEmployee Load (0.5ms)[0m  SELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1  [["id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1[0m  [["id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[35mProfile Load (0.3ms)[0m  SELECT  "profiles".* FROM "profiles"  WHERE "profiles"."employee_id" = $1 LIMIT 1  [["employee_id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[36mCompany Load (0.3ms)[0m  [1mSELECT  "companies".* FROM "companies"  WHERE "companies"."id" = $1 LIMIT 1[0m  [["id", "4928ebc8-4b76-4343-9714-bfef73226c41"]]
+  [1m[35mEmployee Load (0.4ms)[0m  SELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1  [["id", "b6cc9c54-28bd-45cb-a504-8be61b62d98f"]]
+  [1m[36mProfile Load (0.6ms)[0m  [1mSELECT  "profiles".* FROM "profiles"  WHERE "profiles"."employee_id" = $1 LIMIT 1[0m  [["employee_id", "b6cc9c54-28bd-45cb-a504-8be61b62d98f"]]
+Completed 200 OK in 238ms (Views: 108.4ms | ActiveRecord: 24.2ms)
+
+
+Started GET "/assets/lineto-gravurcondensed-bold.woff" for 127.0.0.1 at 2015-03-20 18:44:19 +0800
+Processing by HomeController#index as 
+  Parameters: {"path"=>"assets/lineto-gravurcondensed-bold"}
+  Rendered home/index.html.slim (5.3ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v2/sessions" for 127.0.0.1 at 2015-03-20 18:44:19 +0800
+Processing by Api::V2::SessionsController#index as JSON
+  [1m[35mEmployee Load (0.3ms)[0m  SELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1  [["id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1[0m  [["id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[35mProfile Load (0.4ms)[0m  SELECT  "profiles".* FROM "profiles"  WHERE "profiles"."employee_id" = $1 LIMIT 1  [["employee_id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[36mCompany Load (0.3ms)[0m  [1mSELECT  "companies".* FROM "companies"  WHERE "companies"."id" = $1 LIMIT 1[0m  [["id", "4928ebc8-4b76-4343-9714-bfef73226c41"]]
+  [1m[35mEmployee Load (0.4ms)[0m  SELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1  [["id", "b6cc9c54-28bd-45cb-a504-8be61b62d98f"]]
+  [1m[36mProfile Load (0.4ms)[0m  [1mSELECT  "profiles".* FROM "profiles"  WHERE "profiles"."employee_id" = $1 LIMIT 1[0m  [["employee_id", "b6cc9c54-28bd-45cb-a504-8be61b62d98f"]]
+Completed 200 OK in 20ms (Views: 15.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/lineto-akkurat-regular.ttf" for 127.0.0.1 at 2015-03-20 18:44:19 +0800
+Processing by HomeController#index as 
+  Parameters: {"path"=>"assets/lineto-akkurat-regular"}
+  Rendered home/index.html.slim (4.0ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/lineto-gravurcondensed-bold.ttf" for 127.0.0.1 at 2015-03-20 18:44:19 +0800
+Processing by HomeController#index as 
+  Parameters: {"path"=>"assets/lineto-gravurcondensed-bold"}
+  Rendered home/index.html.slim (4.2ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v2/inventory_releases?finish=2015-05-20T10:44:22.372Z&page=1&start=2015-03-17T10:44:22.372Z" for 127.0.0.1 at 2015-03-20 18:44:22 +0800
+Processing by HomeController#index as JSON
+  Parameters: {"finish"=>"2015-05-20T10:44:22.372Z", "page"=>"1", "start"=>"2015-03-17T10:44:22.372Z", "path"=>"api/v2/inventory_releases"}
+Completed 500 Internal Server Error in 22ms
+
+ActionView::MissingTemplate - Missing template home/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :slim, :axlsx, :jbuilder, :liquid]}. Searched in:
+  * "/home/cowboy/Work/thms-rails/app/views"
+:
+  actionview (4.1.6) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.6) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.6) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.6) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.6) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.6) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.6) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.6) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.6) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.6) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+   () home/cowboy/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/rack/error_collector.rb:50:in `traced_call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:55:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/rack/agent_hooks.rb:26:in `traced_call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:55:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/rack/browser_monitoring.rb:23:in `traced_call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:55:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/rack/developer_mode.rb:48:in `traced_call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:55:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack-contrib (1.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.6) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.6) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.6) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.6) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.6) lib/rails/commands.rb:17:in `<top (required)>'
+   () home/cowboy/Work/thms-rails/bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+   () home/cowboy/Work/thms-rails/bin/spring:16:in `<top (required)>'
+   () rails:3:in `<main>'
+
+
+
+Started GET "/api/v2/released_inventory_requests?finish=2015-05-20T10:44:26.241Z&start=2015-03-17T10:44:26.240Z" for 127.0.0.1 at 2015-03-20 18:44:26 +0800
+Processing by HomeController#index as JSON
+  Parameters: {"finish"=>"2015-05-20T10:44:26.241Z", "start"=>"2015-03-17T10:44:26.240Z", "path"=>"api/v2/released_inventory_requests"}
+Completed 500 Internal Server Error in 3ms
+
+ActionView::MissingTemplate - Missing template home/index with {:locale=>[:en], :formats=>[:json], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :slim, :axlsx, :jbuilder, :liquid]}. Searched in:
+  * "/home/cowboy/Work/thms-rails/app/views"
+:
+  actionview (4.1.6) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.6) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.6) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.6) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.6) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.6) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.6) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.6) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.6) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.6) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+   () home/cowboy/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/rack/error_collector.rb:50:in `traced_call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:55:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/rack/agent_hooks.rb:26:in `traced_call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:55:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/rack/browser_monitoring.rb:23:in `traced_call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:55:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/rack/developer_mode.rb:48:in `traced_call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:55:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack-contrib (1.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.6) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.6) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.6) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.6) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.6) lib/rails/commands.rb:17:in `<top (required)>'
+   () home/cowboy/Work/thms-rails/bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+   () home/cowboy/Work/thms-rails/bin/spring:16:in `<top (required)>'
+   () rails:3:in `<main>'
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-20 18:44:32 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim (5.2ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/lineto-akkurat-regular.woff" for 127.0.0.1 at 2015-03-20 18:44:32 +0800
+Processing by HomeController#index as 
+  Parameters: {"path"=>"assets/lineto-akkurat-regular"}
+  Rendered home/index.html.slim (6.0ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v2/sessions" for 127.0.0.1 at 2015-03-20 18:44:32 +0800
+Processing by Api::V2::SessionsController#index as JSON
+  [1m[35mEmployee Load (0.5ms)[0m  SELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1  [["id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1[0m  [["id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[35mProfile Load (0.4ms)[0m  SELECT  "profiles".* FROM "profiles"  WHERE "profiles"."employee_id" = $1 LIMIT 1  [["employee_id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[36mCompany Load (0.4ms)[0m  [1mSELECT  "companies".* FROM "companies"  WHERE "companies"."id" = $1 LIMIT 1[0m  [["id", "4928ebc8-4b76-4343-9714-bfef73226c41"]]
+  [1m[35mEmployee Load (0.4ms)[0m  SELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1  [["id", "b6cc9c54-28bd-45cb-a504-8be61b62d98f"]]
+  [1m[36mProfile Load (0.4ms)[0m  [1mSELECT  "profiles".* FROM "profiles"  WHERE "profiles"."employee_id" = $1 LIMIT 1[0m  [["employee_id", "b6cc9c54-28bd-45cb-a504-8be61b62d98f"]]
+Completed 200 OK in 23ms (Views: 16.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/lineto-akkurat-regular.ttf" for 127.0.0.1 at 2015-03-20 18:44:32 +0800
+Processing by HomeController#index as 
+  Parameters: {"path"=>"assets/lineto-akkurat-regular"}
+  Rendered home/index.html.slim (6.8ms)
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/lineto-gravurcondensed-bold.woff" for 127.0.0.1 at 2015-03-20 18:44:32 +0800
+Processing by HomeController#index as 
+  Parameters: {"path"=>"assets/lineto-gravurcondensed-bold"}
+  Rendered home/index.html.slim (5.5ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/lineto-gravurcondensed-bold.ttf" for 127.0.0.1 at 2015-03-20 18:44:33 +0800
+Processing by HomeController#index as 
+  Parameters: {"path"=>"assets/lineto-gravurcondensed-bold"}
+  Rendered home/index.html.slim (4.9ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-20 18:45:29 +0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim (4.7ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-03-20 18:45:29 +0800
+
+
+Started GET "/assets/framework.js" for 127.0.0.1 at 2015-03-20 18:45:30 +0800
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-03-20 18:45:30 +0800
+
+
+Started GET "/api/v2/sessions" for 127.0.0.1 at 2015-03-20 18:45:31 +0800
+Processing by Api::V2::SessionsController#index as JSON
+  Rendered text template (0.3ms)
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 34ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v2/sessions" for 127.0.0.1 at 2015-03-20 18:45:36 +0800
+Processing by Api::V2::SessionsController#create as JSON
+  Parameters: {"email"=>"venue@test.com", "password"=>"[FILTERED]"}
+  [1m[35mEmployee Load (0.7ms)[0m  SELECT  "employees".* FROM "employees"  WHERE "employees"."email" = 'venue@test.com' LIMIT 1
+  [1m[36mProfile Load (0.5ms)[0m  [1mSELECT  "profiles".* FROM "profiles"  WHERE "profiles"."employee_id" = $1 LIMIT 1[0m  [["employee_id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[35mCompany Load (0.4ms)[0m  SELECT  "companies".* FROM "companies"  WHERE "companies"."id" = $1 LIMIT 1  [["id", "4928ebc8-4b76-4343-9714-bfef73226c41"]]
+  [1m[36mEmployee Load (0.3ms)[0m  [1mSELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1[0m  [["id", "b6cc9c54-28bd-45cb-a504-8be61b62d98f"]]
+  [1m[35mProfile Load (0.2ms)[0m  SELECT  "profiles".* FROM "profiles"  WHERE "profiles"."employee_id" = $1 LIMIT 1  [["employee_id", "b6cc9c54-28bd-45cb-a504-8be61b62d98f"]]
+Completed 201 Created in 1087ms (Views: 13.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/icomoon.woff" for 127.0.0.1 at 2015-03-20 18:45:37 +0800
+
+
+Started GET "/images/image_edit.png" for 127.0.0.1 at 2015-03-20 18:45:57 +0800
+Processing by HomeController#index as PNG
+  Parameters: {"path"=>"images/image_edit"}
+Completed 500 Internal Server Error in 1ms
+
+ActionView::MissingTemplate - Missing template home/index with {:locale=>[:en], :formats=>[:png], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :slim, :axlsx, :jbuilder, :liquid]}. Searched in:
+  * "/home/cowboy/Work/thms-rails/app/views"
+:
+  actionview (4.1.6) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.6) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.6) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.6) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.6) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.6) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.6) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.6) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.6) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.6) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+   () home/cowboy/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/rack/error_collector.rb:50:in `traced_call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:55:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/rack/agent_hooks.rb:26:in `traced_call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:55:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/rack/browser_monitoring.rb:23:in `traced_call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:55:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/rack/developer_mode.rb:48:in `traced_call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:55:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack-contrib (1.1.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  newrelic_rpm (3.9.5.251) lib/new_relic/agent/instrumentation/middleware_tracing.rb:57:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.3) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.3) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.3) lib/thin/connection.rb:53:in `process'
+  thin (1.6.3) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.3) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.3) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.6) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.6) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.6) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.6) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.6) lib/rails/commands.rb:17:in `<top (required)>'
+   () home/cowboy/Work/thms-rails/bin/rails:8:in `<top (required)>'
+  spring (1.1.3) lib/spring/client/rails.rb:27:in `call'
+  spring (1.1.3) lib/spring/client/command.rb:7:in `call'
+  spring (1.1.3) lib/spring/client.rb:26:in `run'
+  spring (1.1.3) bin/spring:48:in `<top (required)>'
+  spring (1.1.3) lib/spring/binstub.rb:11:in `<top (required)>'
+   () home/cowboy/Work/thms-rails/bin/spring:16:in `<top (required)>'
+   () rails:3:in `<main>'
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-20 18:47:00 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.slim (743.5ms)
+Completed 200 OK in 758ms (Views: 758.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v2/sessions" for 127.0.0.1 at 2015-03-20 18:47:02 +0800
+Processing by Api::V2::SessionsController#index as JSON
+  [1m[35mEmployee Load (27.9ms)[0m  SELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1  [["id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1[0m  [["id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[35mProfile Load (15.5ms)[0m  SELECT  "profiles".* FROM "profiles"  WHERE "profiles"."employee_id" = $1 LIMIT 1  [["employee_id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[36mCompany Load (14.2ms)[0m  [1mSELECT  "companies".* FROM "companies"  WHERE "companies"."id" = $1 LIMIT 1[0m  [["id", "4928ebc8-4b76-4343-9714-bfef73226c41"]]
+  [1m[35mEmployee Load (0.3ms)[0m  SELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1  [["id", "b6cc9c54-28bd-45cb-a504-8be61b62d98f"]]
+  [1m[36mProfile Load (0.2ms)[0m  [1mSELECT  "profiles".* FROM "profiles"  WHERE "profiles"."employee_id" = $1 LIMIT 1[0m  [["employee_id", "b6cc9c54-28bd-45cb-a504-8be61b62d98f"]]
+Completed 200 OK in 315ms (Views: 139.2ms | ActiveRecord: 76.2ms)
+
+
+Started GET "/api/v2/tickets" for 127.0.0.1 at 2015-03-20 18:47:05 +0800
+Processing by Api::V2::TicketsController#index as JSON
+  [1m[35mEmployee Load (0.3ms)[0m  SELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1  [["id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT  "companies".* FROM "companies"  WHERE "companies"."id" = $1 LIMIT 1[0m  [["id", "4928ebc8-4b76-4343-9714-bfef73226c41"]]
+  [1m[35m (17.1ms)[0m  SELECT "companies".id FROM "companies" INNER JOIN "clients_companies" ON "companies"."id" = "clients_companies"."client_id" WHERE "clients_companies"."company_id" = $1  [["company_id", "4928ebc8-4b76-4343-9714-bfef73226c41"]]
+  [1m[36m (16.4ms)[0m  [1mSELECT "facilities".id FROM "facilities"  WHERE "facilities"."company_id" = $1[0m  [["company_id", "4928ebc8-4b76-4343-9714-bfef73226c41"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "companies".id FROM "companies" INNER JOIN "clients_companies" ON "companies"."id" = "clients_companies"."client_id" WHERE "clients_companies"."company_id" = $1  [["company_id", "4928ebc8-4b76-4343-9714-bfef73226c41"]]
+  [1m[36mSQL (176.9ms)[0m  [1mSELECT "events"."id" AS t0_r0, "events"."name" AS t0_r1, "events"."description" AS t0_r2, "events"."event_type" AS t0_r3, "events"."category" AS t0_r4, "events"."company_id" AS t0_r5, "events"."status" AS t0_r6, "events"."created_at" AS t0_r7, "events"."updated_at" AS t0_r8, "events"."data" AS t0_r9, "events"."uploads" AS t0_r10, "event_dates"."id" AS t1_r0, "event_dates"."event_id" AS t1_r1, "event_dates"."status" AS t1_r2, "event_dates"."created_at" AS t1_r3, "event_dates"."updated_at" AS t1_r4, "event_dates"."event_period" AS t1_r5, "event_dates"."uploads" AS t1_r6, "event_dates"."data" AS t1_r7, "tickets"."id" AS t2_r0, "tickets"."event_date_id" AS t2_r1, "tickets"."facility_id" AS t2_r2, "tickets"."inventory_id" AS t2_r3, "tickets"."client_id" AS t2_r4, "tickets"."storage" AS t2_r5, "tickets"."row" AS t2_r6, "tickets"."seat" AS t2_r7, "tickets"."ticketek_id" AS t2_r8, "tickets"."created_at" AS t2_r9, "tickets"."updated_at" AS t2_r10, "tickets"."status" AS t2_r11, "tickets"."reference_number" AS t2_r12, "facilities"."id" AS t3_r0, "facilities"."facility_type" AS t3_r1, "facilities"."name" AS t3_r2, "facilities"."company_id" AS t3_r3, "facilities"."capacity" AS t3_r4, "facilities"."created_at" AS t3_r5, "facilities"."updated_at" AS t3_r6 FROM "events" LEFT OUTER JOIN "event_dates" ON "event_dates"."event_id" = "events"."id" LEFT OUTER JOIN "tickets" ON "tickets"."event_date_id" = "event_dates"."id" LEFT OUTER JOIN "facilities" ON "facilities"."id" = "tickets"."facility_id" WHERE "tickets"."client_id" IN ('9070bcd0-3cf8-40d0-bd12-57e19b850603', 'd38ba1e5-2308-4349-867c-69668182e6c7', 'e2da8211-5a05-4e88-88e9-951bad41abcd', '230ac6cf-64c6-4d0f-a8d2-e1398f3d94f1', '10ae48d5-50a0-44b7-b651-ff41ef7358fc', '4c04a86d-3abe-4690-89e7-46145bf8bd9e', '80dba38e-842a-4b82-ac7c-48f4a21e5d5a', '9259f645-611f-40c7-b6d0-0d6739166140', 'a3cc1f99-f170-4aa9-aa79-b234b265285f', 'ba576d8b-af8e-445f-93df-7fd417f985e8', '0fa6bd2d-98aa-42d4-b3f8-01d552f7016b', 'fc9453fd-3f01-462d-8d3e-6f0fecd5dea0', 'b24e9815-3dd4-4b12-b9f6-3c437545e3d5', '6d674fe5-af41-4598-89f1-ff00aac67995', 'f2e476c7-0d39-407e-bf30-82c523690be7', 'df6dcad0-dd07-46e5-88b2-a47b5c7a52d5', 'b9a8bb54-30df-4aba-856d-30a58ea3fdc3', '24ba72c7-564a-452c-b4fb-cb8197c86962', 'ca2c5880-1bd9-4646-8aed-97dc39240302', 'b2880049-2d37-432d-bcad-c3e52dda5e3b', '0b3eefa9-312a-439c-92db-a2dcd634fdbf', '34ae806b-3995-4327-ace7-b3bee91bc87a', '7a1d3382-973b-4573-bcc9-c1e1b7ee1bba', '7e098683-b55f-44e4-a267-85e5d9028db0', '35bce90e-2135-49c4-b485-8de869b59d0b', '1ba99d18-fc9c-4ea2-9d92-651a4db561ea', 'f861fd43-1ecd-4f4e-a718-d5e5c8fc8fd2', 'f533f9d6-0c4f-49fe-a7f9-0465e22c87e4', 'db42cf95-cecc-4519-b17a-2138f9e9d4f9', '9993e579-8721-46ea-9b26-c281526353a4', '823fd056-db4f-4a62-8699-386f130f7f5b', 'e14d9697-7c68-4f25-84ea-1e29315371f2', '95afdeb0-cb54-40a1-affd-7831e10b0c7a', 'c6e5bce3-143f-4cd8-b194-343de3dda4c9', '84fed42b-4906-4cbd-a4ec-eabed75a7387', '1412a2ae-acd4-4b39-aca4-af107110999d', '87043a4f-b91c-49f0-8c97-b96d0eb606e1', '2ab674e6-4c73-419d-9985-227ec5c02f3d', '5b1b71fb-95d6-438e-a4d8-e29ae9a7deec', '259dd513-5ae9-41eb-a55c-d749b986705e', '4f8d7913-e238-400b-a423-2dda3fbc69f0', 'd8af2a6c-d188-4298-b0f8-eabf507dca1a', '58624918-117b-4e93-942b-c81c8762b3b5', 'e8241a29-90f3-4e1c-843f-6641923315e0', '4489fe99-9969-4903-8e96-7aeeb94fbd1c', '98461404-b5bc-499a-a635-ffc7cf31aa7a', '8d247b8c-32dd-4cee-934d-1b4d9bd93995', 'e68b306d-bebe-4c23-ad47-dac64018c596', '7b1ef3ff-ea6b-44af-9946-0ea276058382', 'b05a909b-7a38-4c23-8b32-e07ae56e58c3', '36100e71-fd86-4d63-ac13-873d70e49dbd', '5be96839-bdc3-4e0e-ab76-9bfeaafa31e2', 'e7639031-8ca3-4bad-aa15-fdcf32ea6132', 'b41716ca-c4f6-4012-a023-0960c4c8f937', 'd027778e-8a0f-42a0-a32c-bbf715ad71b1') AND (upper(event_dates.event_period) > now())[0m
+  Rendered api/v2/tickets/index.json.jbuilder (905.4ms)
+Completed 200 OK in 1059ms (Views: 733.1ms | ActiveRecord: 217.9ms)
+
+
+Started GET "/tickets/anz" for 127.0.0.1 at 2015-03-20 18:47:09 +0800
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"tickets/anz"}
+  Rendered home/index.html.slim (4.9ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2015-03-20 18:47:09 +0800
+
+
+Started GET "/assets/framework.js" for 127.0.0.1 at 2015-03-20 18:47:09 +0800
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2015-03-20 18:47:09 +0800
+
+
+Started GET "/api/v2/sessions" for 127.0.0.1 at 2015-03-20 18:47:11 +0800
+Processing by Api::V2::SessionsController#index as JSON
+  [1m[35mEmployee Load (0.3ms)[0m  SELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1  [["id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1[0m  [["id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[35mProfile Load (0.4ms)[0m  SELECT  "profiles".* FROM "profiles"  WHERE "profiles"."employee_id" = $1 LIMIT 1  [["employee_id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT  "companies".* FROM "companies"  WHERE "companies"."id" = $1 LIMIT 1[0m  [["id", "4928ebc8-4b76-4343-9714-bfef73226c41"]]
+  [1m[35mEmployee Load (0.3ms)[0m  SELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1  [["id", "b6cc9c54-28bd-45cb-a504-8be61b62d98f"]]
+  [1m[36mProfile Load (0.2ms)[0m  [1mSELECT  "profiles".* FROM "profiles"  WHERE "profiles"."employee_id" = $1 LIMIT 1[0m  [["employee_id", "b6cc9c54-28bd-45cb-a504-8be61b62d98f"]]
+Completed 200 OK in 19ms (Views: 13.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/api/v2/sessions" for 127.0.0.1 at 2015-03-20 18:47:11 +0800
+Processing by Api::V2::SessionsController#index as JSON
+  [1m[35mEmployee Load (0.3ms)[0m  SELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1  [["id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1[0m  [["id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[35mProfile Load (0.2ms)[0m  SELECT  "profiles".* FROM "profiles"  WHERE "profiles"."employee_id" = $1 LIMIT 1  [["employee_id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT  "companies".* FROM "companies"  WHERE "companies"."id" = $1 LIMIT 1[0m  [["id", "4928ebc8-4b76-4343-9714-bfef73226c41"]]
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1  [["id", "b6cc9c54-28bd-45cb-a504-8be61b62d98f"]]
+  [1m[36mProfile Load (0.2ms)[0m  [1mSELECT  "profiles".* FROM "profiles"  WHERE "profiles"."employee_id" = $1 LIMIT 1[0m  [["employee_id", "b6cc9c54-28bd-45cb-a504-8be61b62d98f"]]
+Completed 200 OK in 17ms (Views: 13.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/v2/sessions" for 127.0.0.1 at 2015-03-20 18:47:11 +0800
+Processing by Api::V2::SessionsController#index as JSON
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1  [["id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1[0m  [["id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[35mProfile Load (0.2ms)[0m  SELECT  "profiles".* FROM "profiles"  WHERE "profiles"."employee_id" = $1 LIMIT 1  [["employee_id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT  "companies".* FROM "companies"  WHERE "companies"."id" = $1 LIMIT 1[0m  [["id", "4928ebc8-4b76-4343-9714-bfef73226c41"]]
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1  [["id", "b6cc9c54-28bd-45cb-a504-8be61b62d98f"]]
+  [1m[36mProfile Load (0.2ms)[0m  [1mSELECT  "profiles".* FROM "profiles"  WHERE "profiles"."employee_id" = $1 LIMIT 1[0m  [["employee_id", "b6cc9c54-28bd-45cb-a504-8be61b62d98f"]]
+Completed 200 OK in 16ms (Views: 11.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v2/sessions" for 127.0.0.1 at 2015-03-20 18:47:11 +0800
+Processing by Api::V2::SessionsController#index as JSON
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1  [["id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1[0m  [["id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[35mProfile Load (0.2ms)[0m  SELECT  "profiles".* FROM "profiles"  WHERE "profiles"."employee_id" = $1 LIMIT 1  [["employee_id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[36mCompany Load (0.5ms)[0m  [1mSELECT  "companies".* FROM "companies"  WHERE "companies"."id" = $1 LIMIT 1[0m  [["id", "4928ebc8-4b76-4343-9714-bfef73226c41"]]
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1  [["id", "b6cc9c54-28bd-45cb-a504-8be61b62d98f"]]
+  [1m[36mProfile Load (0.2ms)[0m  [1mSELECT  "profiles".* FROM "profiles"  WHERE "profiles"."employee_id" = $1 LIMIT 1[0m  [["employee_id", "b6cc9c54-28bd-45cb-a504-8be61b62d98f"]]
+Completed 200 OK in 74ms (Views: 70.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v2/sessions" for 127.0.0.1 at 2015-03-20 18:47:11 +0800
+Processing by Api::V2::SessionsController#index as JSON
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1  [["id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1[0m  [["id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[35mProfile Load (0.2ms)[0m  SELECT  "profiles".* FROM "profiles"  WHERE "profiles"."employee_id" = $1 LIMIT 1  [["employee_id", "3151d80a-b213-4be0-8cb5-48704be9e30f"]]
+  [1m[36mCompany Load (0.3ms)[0m  [1mSELECT  "companies".* FROM "companies"  WHERE "companies"."id" = $1 LIMIT 1[0m  [["id", "4928ebc8-4b76-4343-9714-bfef73226c41"]]
+  [1m[35mEmployee Load (0.2ms)[0m  SELECT  "employees".* FROM "employees"  WHERE "employees"."id" = $1 LIMIT 1  [["id", "b6cc9c54-28bd-45cb-a504-8be61b62d98f"]]
+  [1m[36mProfile Load (0.2ms)[0m  [1mSELECT  "profiles".* FROM "profiles"  WHERE "profiles"."employee_id" = $1 LIMIT 1[0m  [["employee_id", "b6cc9c54-28bd-45cb-a504-8be61b62d98f"]]
+Completed 200 OK in 18ms (Views: 14.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/tickets/anz/dmVudWVAdGVzdC5jb20sMTQyNjc3NjU0Ng==--bc4c775f2003ef180b1e2f5d51eebb3310ff11c07f5cb90a1845d1aa64b5eaa6" for 127.0.0.1 at 2015-03-20 18:47:12 +0800
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"tickets/anz/dmVudWVAdGVzdC5jb20sMTQyNjc3NjU0Ng==--bc4c775f2003ef180b1e2f5d51eebb3310ff11c07f5cb90a1845d1aa64b5eaa6"}
+  Rendered home/index.html.slim (4.7ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/icomoon.woff" for 127.0.0.1 at 2015-03-20 18:47:13 +0800
+
+
+Started GET "/api/v2/tickets/anz/dmVudWVAdGVzdC5jb20sMTQyNjc3NjU0Ng==--bc4c775f2003ef180b1e2f5d51eebb3310ff11c07f5cb90a1845d1aa64b5eaa6" for 127.0.0.1 at 2015-03-20 18:47:13 +0800
+Processing by Api::V2::TicketsController#anz_index as JSON
+  Parameters: {"auth_token"=>"dmVudWVAdGVzdC5jb20sMTQyNjc3NjU0Ng==--bc4c775f2003ef180b1e2f5d51eebb3310ff11c07f5cb90a1845d1aa64b5eaa6"}
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tickets/anz/YW56QHZlbnVlLnRlc3QsMTQ1ODMyNjQzMQ==--61d3b60abac9a94cbd3b46a1ca5b9ef2fedf4149753df035ee8b384ad9de271d" for 127.0.0.1 at 2015-03-20 18:47:31 +0800
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"tickets/anz/YW56QHZlbnVlLnRlc3QsMTQ1ODMyNjQzMQ==--61d3b60abac9a94cbd3b46a1ca5b9ef2fedf4149753df035ee8b384ad9de271d"}
+  Rendered home/index.html.slim (5.7ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v2/tickets/anz/YW56QHZlbnVlLnRlc3QsMTQ1ODMyNjQzMQ==--61d3b60abac9a94cbd3b46a1ca5b9ef2fedf4149753df035ee8b384ad9de271d" for 127.0.0.1 at 2015-03-20 18:47:32 +0800
+Processing by Api::V2::TicketsController#anz_index as JSON
+  Parameters: {"auth_token"=>"YW56QHZlbnVlLnRlc3QsMTQ1ODMyNjQzMQ==--61d3b60abac9a94cbd3b46a1ca5b9ef2fedf4149753df035ee8b384ad9de271d"}
+  [1m[35mEmployee Load (0.5ms)[0m  SELECT  "employees".* FROM "employees"  WHERE "employees"."email" = 'anz@venue.test' LIMIT 1
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT  "companies".* FROM "companies"  WHERE "companies"."id" = $1 LIMIT 1[0m  [["id", "4928ebc8-4b76-4343-9714-bfef73226c41"]]
+  [1m[35m (0.4ms)[0m  SELECT "companies".id FROM "companies" INNER JOIN "clients_companies" ON "companies"."id" = "clients_companies"."client_id" WHERE "clients_companies"."company_id" = $1  [["company_id", "4928ebc8-4b76-4343-9714-bfef73226c41"]]
+  [1m[36mSQL (17.2ms)[0m  [1mSELECT "events"."id" AS t0_r0, "events"."name" AS t0_r1, "events"."description" AS t0_r2, "events"."event_type" AS t0_r3, "events"."category" AS t0_r4, "events"."company_id" AS t0_r5, "events"."status" AS t0_r6, "events"."created_at" AS t0_r7, "events"."updated_at" AS t0_r8, "events"."data" AS t0_r9, "events"."uploads" AS t0_r10, "event_dates"."id" AS t1_r0, "event_dates"."event_id" AS t1_r1, "event_dates"."status" AS t1_r2, "event_dates"."created_at" AS t1_r3, "event_dates"."updated_at" AS t1_r4, "event_dates"."event_period" AS t1_r5, "event_dates"."uploads" AS t1_r6, "event_dates"."data" AS t1_r7, "tickets"."id" AS t2_r0, "tickets"."event_date_id" AS t2_r1, "tickets"."facility_id" AS t2_r2, "tickets"."inventory_id" AS t2_r3, "tickets"."client_id" AS t2_r4, "tickets"."storage" AS t2_r5, "tickets"."row" AS t2_r6, "tickets"."seat" AS t2_r7, "tickets"."ticketek_id" AS t2_r8, "tickets"."created_at" AS t2_r9, "tickets"."updated_at" AS t2_r10, "tickets"."status" AS t2_r11, "tickets"."reference_number" AS t2_r12, "facilities"."id" AS t3_r0, "facilities"."facility_type" AS t3_r1, "facilities"."name" AS t3_r2, "facilities"."company_id" AS t3_r3, "facilities"."capacity" AS t3_r4, "facilities"."created_at" AS t3_r5, "facilities"."updated_at" AS t3_r6 FROM "events" LEFT OUTER JOIN "event_dates" ON "event_dates"."event_id" = "events"."id" LEFT OUTER JOIN "tickets" ON "tickets"."event_date_id" = "event_dates"."id" LEFT OUTER JOIN "facilities" ON "facilities"."id" = "tickets"."facility_id" WHERE "tickets"."status" = 'available' AND (tickets.client_id IN ('9070bcd0-3cf8-40d0-bd12-57e19b850603','d38ba1e5-2308-4349-867c-69668182e6c7','e2da8211-5a05-4e88-88e9-951bad41abcd','230ac6cf-64c6-4d0f-a8d2-e1398f3d94f1','10ae48d5-50a0-44b7-b651-ff41ef7358fc','4c04a86d-3abe-4690-89e7-46145bf8bd9e','80dba38e-842a-4b82-ac7c-48f4a21e5d5a','9259f645-611f-40c7-b6d0-0d6739166140','a3cc1f99-f170-4aa9-aa79-b234b265285f','ba576d8b-af8e-445f-93df-7fd417f985e8','0fa6bd2d-98aa-42d4-b3f8-01d552f7016b','fc9453fd-3f01-462d-8d3e-6f0fecd5dea0','b24e9815-3dd4-4b12-b9f6-3c437545e3d5','6d674fe5-af41-4598-89f1-ff00aac67995','f2e476c7-0d39-407e-bf30-82c523690be7','df6dcad0-dd07-46e5-88b2-a47b5c7a52d5','b9a8bb54-30df-4aba-856d-30a58ea3fdc3','24ba72c7-564a-452c-b4fb-cb8197c86962','ca2c5880-1bd9-4646-8aed-97dc39240302','b2880049-2d37-432d-bcad-c3e52dda5e3b','0b3eefa9-312a-439c-92db-a2dcd634fdbf','34ae806b-3995-4327-ace7-b3bee91bc87a','7a1d3382-973b-4573-bcc9-c1e1b7ee1bba','7e098683-b55f-44e4-a267-85e5d9028db0','35bce90e-2135-49c4-b485-8de869b59d0b','1ba99d18-fc9c-4ea2-9d92-651a4db561ea','f861fd43-1ecd-4f4e-a718-d5e5c8fc8fd2','f533f9d6-0c4f-49fe-a7f9-0465e22c87e4','db42cf95-cecc-4519-b17a-2138f9e9d4f9','9993e579-8721-46ea-9b26-c281526353a4','823fd056-db4f-4a62-8699-386f130f7f5b','e14d9697-7c68-4f25-84ea-1e29315371f2','95afdeb0-cb54-40a1-affd-7831e10b0c7a','c6e5bce3-143f-4cd8-b194-343de3dda4c9','84fed42b-4906-4cbd-a4ec-eabed75a7387','1412a2ae-acd4-4b39-aca4-af107110999d','87043a4f-b91c-49f0-8c97-b96d0eb606e1','2ab674e6-4c73-419d-9985-227ec5c02f3d','5b1b71fb-95d6-438e-a4d8-e29ae9a7deec','259dd513-5ae9-41eb-a55c-d749b986705e','4f8d7913-e238-400b-a423-2dda3fbc69f0','d8af2a6c-d188-4298-b0f8-eabf507dca1a','58624918-117b-4e93-942b-c81c8762b3b5','e8241a29-90f3-4e1c-843f-6641923315e0','4489fe99-9969-4903-8e96-7aeeb94fbd1c','98461404-b5bc-499a-a635-ffc7cf31aa7a','8d247b8c-32dd-4cee-934d-1b4d9bd93995','e68b306d-bebe-4c23-ad47-dac64018c596','7b1ef3ff-ea6b-44af-9946-0ea276058382','b05a909b-7a38-4c23-8b32-e07ae56e58c3','36100e71-fd86-4d63-ac13-873d70e49dbd','5be96839-bdc3-4e0e-ab76-9bfeaafa31e2','e7639031-8ca3-4bad-aa15-fdcf32ea6132','b41716ca-c4f6-4012-a023-0960c4c8f937','d027778e-8a0f-42a0-a32c-bbf715ad71b1')) AND (upper(event_dates.event_period) > now())[0m
+  Rendered api/v2/tickets/anz_index.json.jbuilder (22.2ms)
+Completed 200 OK in 51ms (Views: 25.7ms | ActiveRecord: 18.3ms)
+
+
+Started GET "/tickets/anz/dmVudWVAdGVzdC5jb20sMTQ1ODMyNjQzMQ==--a605021d74735d6590385c307c425a5477cdd422007a571984e78cf3a8a6c35a" for 127.0.0.1 at 2015-03-20 18:47:52 +0800
+Processing by HomeController#index as HTML
+  Parameters: {"path"=>"tickets/anz/dmVudWVAdGVzdC5jb20sMTQ1ODMyNjQzMQ==--a605021d74735d6590385c307c425a5477cdd422007a571984e78cf3a8a6c35a"}
+  Rendered home/index.html.slim (5.0ms)
+Completed 200 OK in 6ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v2/tickets/anz/dmVudWVAdGVzdC5jb20sMTQ1ODMyNjQzMQ==--a605021d74735d6590385c307c425a5477cdd422007a571984e78cf3a8a6c35a" for 127.0.0.1 at 2015-03-20 18:47:53 +0800
+Processing by Api::V2::TicketsController#anz_index as JSON
+  Parameters: {"auth_token"=>"dmVudWVAdGVzdC5jb20sMTQ1ODMyNjQzMQ==--a605021d74735d6590385c307c425a5477cdd422007a571984e78cf3a8a6c35a"}
+  [1m[35mEmployee Load (0.4ms)[0m  SELECT  "employees".* FROM "employees"  WHERE "employees"."email" = 'venue@test.com' LIMIT 1
+  [1m[36mCompany Load (0.2ms)[0m  [1mSELECT  "companies".* FROM "companies"  WHERE "companies"."id" = $1 LIMIT 1[0m  [["id", "4928ebc8-4b76-4343-9714-bfef73226c41"]]
+  [1m[35m (0.4ms)[0m  SELECT "companies".id FROM "companies" INNER JOIN "clients_companies" ON "companies"."id" = "clients_companies"."client_id" WHERE "clients_companies"."company_id" = $1  [["company_id", "4928ebc8-4b76-4343-9714-bfef73226c41"]]
+  [1m[36mSQL (1.2ms)[0m  [1mSELECT "events"."id" AS t0_r0, "events"."name" AS t0_r1, "events"."description" AS t0_r2, "events"."event_type" AS t0_r3, "events"."category" AS t0_r4, "events"."company_id" AS t0_r5, "events"."status" AS t0_r6, "events"."created_at" AS t0_r7, "events"."updated_at" AS t0_r8, "events"."data" AS t0_r9, "events"."uploads" AS t0_r10, "event_dates"."id" AS t1_r0, "event_dates"."event_id" AS t1_r1, "event_dates"."status" AS t1_r2, "event_dates"."created_at" AS t1_r3, "event_dates"."updated_at" AS t1_r4, "event_dates"."event_period" AS t1_r5, "event_dates"."uploads" AS t1_r6, "event_dates"."data" AS t1_r7, "tickets"."id" AS t2_r0, "tickets"."event_date_id" AS t2_r1, "tickets"."facility_id" AS t2_r2, "tickets"."inventory_id" AS t2_r3, "tickets"."client_id" AS t2_r4, "tickets"."storage" AS t2_r5, "tickets"."row" AS t2_r6, "tickets"."seat" AS t2_r7, "tickets"."ticketek_id" AS t2_r8, "tickets"."created_at" AS t2_r9, "tickets"."updated_at" AS t2_r10, "tickets"."status" AS t2_r11, "tickets"."reference_number" AS t2_r12, "facilities"."id" AS t3_r0, "facilities"."facility_type" AS t3_r1, "facilities"."name" AS t3_r2, "facilities"."company_id" AS t3_r3, "facilities"."capacity" AS t3_r4, "facilities"."created_at" AS t3_r5, "facilities"."updated_at" AS t3_r6 FROM "events" LEFT OUTER JOIN "event_dates" ON "event_dates"."event_id" = "events"."id" LEFT OUTER JOIN "tickets" ON "tickets"."event_date_id" = "event_dates"."id" LEFT OUTER JOIN "facilities" ON "facilities"."id" = "tickets"."facility_id" WHERE "tickets"."status" = 'available' AND (tickets.client_id IN ('9070bcd0-3cf8-40d0-bd12-57e19b850603','d38ba1e5-2308-4349-867c-69668182e6c7','e2da8211-5a05-4e88-88e9-951bad41abcd','230ac6cf-64c6-4d0f-a8d2-e1398f3d94f1','10ae48d5-50a0-44b7-b651-ff41ef7358fc','4c04a86d-3abe-4690-89e7-46145bf8bd9e','80dba38e-842a-4b82-ac7c-48f4a21e5d5a','9259f645-611f-40c7-b6d0-0d6739166140','a3cc1f99-f170-4aa9-aa79-b234b265285f','ba576d8b-af8e-445f-93df-7fd417f985e8','0fa6bd2d-98aa-42d4-b3f8-01d552f7016b','fc9453fd-3f01-462d-8d3e-6f0fecd5dea0','b24e9815-3dd4-4b12-b9f6-3c437545e3d5','6d674fe5-af41-4598-89f1-ff00aac67995','f2e476c7-0d39-407e-bf30-82c523690be7','df6dcad0-dd07-46e5-88b2-a47b5c7a52d5','b9a8bb54-30df-4aba-856d-30a58ea3fdc3','24ba72c7-564a-452c-b4fb-cb8197c86962','ca2c5880-1bd9-4646-8aed-97dc39240302','b2880049-2d37-432d-bcad-c3e52dda5e3b','0b3eefa9-312a-439c-92db-a2dcd634fdbf','34ae806b-3995-4327-ace7-b3bee91bc87a','7a1d3382-973b-4573-bcc9-c1e1b7ee1bba','7e098683-b55f-44e4-a267-85e5d9028db0','35bce90e-2135-49c4-b485-8de869b59d0b','1ba99d18-fc9c-4ea2-9d92-651a4db561ea','f861fd43-1ecd-4f4e-a718-d5e5c8fc8fd2','f533f9d6-0c4f-49fe-a7f9-0465e22c87e4','db42cf95-cecc-4519-b17a-2138f9e9d4f9','9993e579-8721-46ea-9b26-c281526353a4','823fd056-db4f-4a62-8699-386f130f7f5b','e14d9697-7c68-4f25-84ea-1e29315371f2','95afdeb0-cb54-40a1-affd-7831e10b0c7a','c6e5bce3-143f-4cd8-b194-343de3dda4c9','84fed42b-4906-4cbd-a4ec-eabed75a7387','1412a2ae-acd4-4b39-aca4-af107110999d','87043a4f-b91c-49f0-8c97-b96d0eb606e1','2ab674e6-4c73-419d-9985-227ec5c02f3d','5b1b71fb-95d6-438e-a4d8-e29ae9a7deec','259dd513-5ae9-41eb-a55c-d749b986705e','4f8d7913-e238-400b-a423-2dda3fbc69f0','d8af2a6c-d188-4298-b0f8-eabf507dca1a','58624918-117b-4e93-942b-c81c8762b3b5','e8241a29-90f3-4e1c-843f-6641923315e0','4489fe99-9969-4903-8e96-7aeeb94fbd1c','98461404-b5bc-499a-a635-ffc7cf31aa7a','8d247b8c-32dd-4cee-934d-1b4d9bd93995','e68b306d-bebe-4c23-ad47-dac64018c596','7b1ef3ff-ea6b-44af-9946-0ea276058382','b05a909b-7a38-4c23-8b32-e07ae56e58c3','36100e71-fd86-4d63-ac13-873d70e49dbd','5be96839-bdc3-4e0e-ab76-9bfeaafa31e2','e7639031-8ca3-4bad-aa15-fdcf32ea6132','b41716ca-c4f6-4012-a023-0960c4c8f937','d027778e-8a0f-42a0-a32c-bbf715ad71b1')) AND (upper(event_dates.event_period) > now())[0m
+  Rendered api/v2/tickets/anz_index.json.jbuilder (5.3ms)
+Completed 200 OK in 15ms (Views: 5.0ms | ActiveRecord: 2.1ms)
